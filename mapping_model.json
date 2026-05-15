@@ -1,0 +1,37 @@
+{
+  "NAME Milky Way": "spe_milkyay",
+  "NAME Sun":  "spe_Sun",
+  "NAME Moon":  "spe_Moon",
+
+  "NAME Mercury":  "planet_Mercury",
+  "NAME Venus":  "planet_Venus",
+  "NAME Mars":  "planet_Mars",
+  "NAME Jupiter":  "planet_Jupiter",
+  "NAME Saturn":  "planet_Saturn",
+
+  "C 99": "comet_id",
+  "C 76":  "comet_id",
+  "C 41": "comet_id",
+
+  "NAME Orion Nebula":"dso_id",
+  "NAME Carina Nebula": "dso_id",
+  "NGC 869":  "dso_id",
+  "NAME ω Cen Cluster": "dso_id",
+  "NAME Large Magellanic Cloud":"dso_id",
+  "NAME Pleiades": "dso_id",
+  "NAME Small Magellanic Cloud": "dso_id",
+  "NAME Coalsack Nebula":  "dso_id",
+  "NAME Andromeda Galaxy": "dso_id",
+  "NGC 292": "dso_id",
+  "NAME Beehive Cluster": "dso_id",
+  "NGC 884": "dso_id",
+  "M 44": "dso_id",
+  "M 45": "dso_id",
+  "M 7":  "dso_id",
+
+  "NAME Antares": "star_hip",
+  "NAME Procyon":  "star_hip",
+  "NAME Sirius":  "star_hip",
+  "NAME Canopus": "star_hip"
+
+}
