@@ -4,10 +4,10 @@ Mapping entre les références DSO dans stellarium et la librairie StarPlot
 ### Context
 I'm working on GrapheStellar, a personal project showcasing American skycultures, currently using Stellarium as my primary data source. I generate the maps with Starplot.
 
-[Exmple Lokono](https://www.inimod.org/graphestellar_0.5/lokono/map.html)
+[Exemple Lokono](https://www.inimod.org/graphestellar_0.5/lokono/map.html)
 
 ### Need
-I now want to add named objects such as DSO, and Comet, Planet, Moon, Sun in Zénithal 
+I now want to add named objects such as DSO, Planet, Moon, Sun  
 
 ### Pb 
 In the Stellarium source files, this is the **common_names** attribute.
@@ -35,49 +35,58 @@ The following example, Anutan, although Oceanic, illustrates my problem.
 I scanned the 39 JSON files in the skycultures directory, I excluded the keys with HIP in the common_names attribute. So I'm left with the **exotic keys**.
 
 ### Proposal : 
+
 I propose to work on a mapping file of the following form:
  key : Stellarium (or a slug)
  Val :  The Starplot **object type**_**object id**
           spe for special sun,moon,milkyway
 My need is for a plotting
+https://starplot.dev
+
 ```json
 {
+  #  Spécifique à mon codage
   "NAME Milky Way": "spe_milkyay",
   "NAME Sun":  "spe_Sun",
   "NAME Moon":  "spe_Moon",
-
+ #  Starplot planet.get() 
   "NAME Mercury":  "planet_Mercury",
   "NAME Venus":  "planet_Venus",
-  "NAME Mars":  "planet_Mars",  
+  "NAME Mars":  "planet_Mars",
   "NAME Jupiter":  "planet_Jupiter",
   "NAME Saturn":  "planet_Saturn",
-  
-  "C 99": "comet_id",    
-  "C 76":  "comet_id",
-  "C 41": "comet_id",
-  
-  "NAME Orion Nebula":"dso_id",
-  "NAME Carina Nebula": "dso_id",  
-  "NGC 869":  "dso_id",  
-  "NAME ω Cen Cluster": "dso_id",
-  "NAME Large Magellanic Cloud":"dso_id",
-  "NAME Pleiades": "dso_id",
-  "NAME Small Magellanic Cloud": "dso_id",
-  "NAME Coalsack Nebula":  "dso_id",
-  "NAME Andromeda Galaxy": "dso_id",
-  "NGC 292": "dso_id",
-  "NAME Beehive Cluster": "dso_id",
-  "NGC 884": "dso_id",
-  "M 44": "dso_id",
-  "M 45": "dso_id",
-  "M 7":  "dso_id",
 
-  "NAME Antares": "star_hip",
-  "NAME Procyon":  "star_hip",
-  "NAME Sirius":  "star_hip",
-  "NAME Canopus": "star_hip"
+  #  Starplot DSO.get()
+  "C 99": "dso_C099",
+  "C 76":  "dso_NGC6231",
+  "C 41": "dso_C041",
+  "M 44": "dso_NGC2632",
+  "M 45": "dso_Orion",
+  "M 7":  "dso_NGC6475",
+  "NGC 292": "dso_NGC292",
+  "NGC 869":  "dso_IC0869",
+  "NGC 884": "dso_NGC884",
+  "NAME Orion Nebula":"dso_Orion",
+  "NAME Carina Nebula": "dso_NGC3372",
+  "NAME ω Cen Cluster": "dso_NGC5139",
+  "NAME Large Magellanic Cloud":"dso_ESO056-115",
+  "NAME Pleiades": "dso_Mel022",
+  "NAME Small Magellanic Cloud": "dso_NGC0292",
+  "NAME Coalsack Nebula":  "dso_C099",
+  "NAME Andromeda Galaxy": "dso_NGC0224",
+  "NAME Beehive Cluster": "dso_NGC2632",
+
+  # StarPlot  Star.get()
+  "NAME Antares": "star_80763",
+  "NAME Procyon":  "star_37279",
+  "NAME Sirius":  "star_32349",
+  "NAME Canopus": "star_30438"
     
 }
 ```
-
+   #  Caldwell -> Open NGC
+  # http://www.messier.seds.org/xtra/similar/caldwell.html
+  
+    # Messier  -> Open NGC
+  # https://www.rasc.ca/sites/default/files/messier.pdf
 I would appreciate some feedback and comments _avant de plonger dans un terrier de lapin..._
