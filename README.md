@@ -5,7 +5,7 @@ Mapping entre les références *common_names* dans Stellarium et la librairie [S
 
 I'm working on GrapheStellar, a personal project showcasing American skycultures, currently using Stellarium as my primary data source. I generate the maps with Starplot.
 
-[Exemple Lokono](https://www.inimod.org/graphestellar_0.5/lokono/map.html)
+<img src="lokono.webp" alt="description" >
 
 ### Besoin
 
