@@ -1,17 +1,22 @@
 # stellarium_starplot
-Mapping entre les références DSO dans stellarium et la librairie StarPlot
+Mapping entre les références *common_names* dans Stellarium et la librairie StarPlot
 
 ### Context
+
 I'm working on GrapheStellar, a personal project showcasing American skycultures, currently using Stellarium as my primary data source. I generate the maps with Starplot.
 
 [Exemple Lokono](https://www.inimod.org/graphestellar_0.5/lokono/map.html)
 
-### Need
-I now want to add named objects such as DSO, Planet, Moon, Sun  
+### Besoin
 
-### Pb 
-In the Stellarium source files, this is the **common_names** attribute.
-The following example, Anutan, although Oceanic, illustrates my problem.
+Pouvoir ajouter les objest nommées sur les cartes avec Starplot : DSO,Planet, Moon, Sun  
+
+### Problème 
+Dans le format de définition Json d'une SkyCulture l'attribut **common_names**.
+L'exemple de la culture Anutan illustre parfaitement mon problème.
+- un mixe entre HIP and NAME pour désigner des étoiles
+- NAME inconsistant pour la recherche DSO.get(name=) de StarPlot (Open NGC)
+
 ```json
   "common_names": {
     "NAME Sirius": [{"english": "The Bird's Body", "native": "Te Tino A Manu"}],
@@ -29,17 +34,10 @@ The following example, Anutan, although Oceanic, illustrates my problem.
 ```
 [Source](https://github.com/Stellarium/stellarium-skycultures/blob/master/anutan/index.json)
 
-- a mix of HIP and NAME to designate the stars
-- NAME inconsistent with Open NGC and StarPlot search
+### Solution : 
 
-I scanned the 39 JSON files in the skycultures directory, I excluded the keys with HIP in the common_names attribute. So I'm left with the **exotic keys**.
+J'ai scannée (14/05/2026), le répertoire Skycultures de Stellarium, j'ai parsé les common_names en réjectant les HIP, il reste donc les **Clefs exotiques**.
 
-### Proposal : 
-
-I propose to work on a mapping file of the following form:
- key : Stellarium (or a slug)
- Val :  The Starplot **object type**_**object id**
-          spe for special sun,moon,milkyway
 My need is for a plotting
 https://starplot.dev
 
@@ -50,7 +48,7 @@ https://starplot.dev
   "NAME Sun":  "spe_Sun",
   "NAME Moon":  "spe_Moon",
   
-  "comment_2" : "  straplot.Planet.get(name=)",    
+  "comment_2" : "  straplot.Planet.get(name='Mercury')",    
   "NAME Mercury":  "planet_Mercury",
   "NAME Venus":  "planet_Venus",
   "NAME Mars":  "planet_Mars",
@@ -58,7 +56,7 @@ https://starplot.dev
   "NAME Saturn":  "planet_Saturn",
 
   
-  "comment_3" : " Star Plot starplot.DSO.get(name=) source http://www.messier.seds.org/xtra/similar/caldwell.html https://www.rasc.ca/sites/default/files/messier.pdf https://starplot.dev/object-names/dsos",
+  "comment_3" : " Star Plot starplot.DSO.get(name='C099') ",
   "C 99": "dso_C099",
   "C 76":  "dso_NGC6231",
   "C 41": "dso_C041",
@@ -78,7 +76,7 @@ https://starplot.dev
   "NAME Andromeda Galaxy": "dso_NGC0224",
   "NAME Beehive Cluster": "dso_NGC2632",
 
-  "comment_4":" starplot.Star.get(hip=)",
+  "comment_4":" starplot.Star.get(hip=80763) ",
   "NAME Antares": "star_80763",
   "NAME Procyon":  "star_37279",
   "NAME Sirius":  "star_32349",
@@ -88,11 +86,11 @@ https://starplot.dev
 ```
 
 # Sources 
-Caldwell -> Open NGC
-http://www.messier.seds.org/xtra/similar/caldwell.html
+**Caldwell -> NGC**
+[http://www.messier.seds.org/xtra/similar/caldwell.html]http://www.messier.seds.org/xtra/similar/caldwell.html
   
-Messier  -> Open NGC
-https://www.rasc.ca/sites/default/files/messier.pdf
+**Messier  -> NGC**
+[https://www.rasc.ca/sites/default/files/messier.pdf](https://www.rasc.ca/sites/default/files/messier.pdf)
 
-StarPlot
-https://starplot.dev/object-names/dsos
+**StarPlot**
+[https://starplot.dev/object-names/dsos](https://starplot.dev/object-names/dsos)
