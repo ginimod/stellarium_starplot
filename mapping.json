@@ -3,8 +3,8 @@
   "version" : "0.1",
   "date":"2026-05-15",
   
-  "comment_1" : " Specifique à StarPlot , bypass milkyay,  starplot.Sun, starplot.Moon ", 
-  "NAME Milky Way": "spe_milkyay",
+  "comment_1" : " Specifique à StarPlot , bypass milkyway,  starplot.Sun, starplot.Moon ", 
+  "NAME Milky Way": "spe_milkyway",
   "NAME Sun":  "spe_Sun",
   "NAME Moon":  "spe_Moon",
   
