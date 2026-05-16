@@ -5,15 +5,15 @@
   
   "comment_1" : " Specifique à StarPlot , bypass milkyway,  starplot.Sun, starplot.Moon ", 
   "NAME Milky Way": "spe_milkyway",
-  "NAME Sun":  "spe_Sun",
-  "NAME Moon":  "spe_Moon",
+  "NAME Sun":  "spe_sun",
+  "NAME Moon":  "spe_moon",
   
   "comment_2" : "  straplot.Planet.get(name=)",    
-  "NAME Mercury":  "planet_Mercury",
-  "NAME Venus":  "planet_Venus",
-  "NAME Mars":  "planet_Mars",
-  "NAME Jupiter":  "planet_Jupiter",
-  "NAME Saturn":  "planet_Saturn",
+  "NAME Mercury":  "planet_mercury",
+  "NAME Venus":  "planet_menus",
+  "NAME Mars":  "planet_mars",
+  "NAME Jupiter":  "planet_mupiter",
+  "NAME Saturn":  "planet_saturn",
 
   
   "comment_3" : " Star Plot starplot.DSO.get(name=) source http://www.messier.seds.org/xtra/similar/caldwell.html https://www.rasc.ca/sites/default/files/messier.pdf https://starplot.dev/object-names/dsos",
