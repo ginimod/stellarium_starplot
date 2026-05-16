@@ -90,7 +90,8 @@ J'ai créé un fichier de Mapping en m'appuyant sur les trois sources citées en
 J'ai également créé deux fichiers mapping de [Messier2NGC](https://github.com/ginimod/stellarium_starplot/blob/main/messier.json) et [Cadwell2NGC](https://github.com/ginimod/stellarium_starplot/blob/main/caldwell.json) parceque je pense que ça va me reservir.
 
 **todo**
- Développer un script pour les Catalogue
+
+ Développer une lib pour les Catalogues
  
 
 # Références 
