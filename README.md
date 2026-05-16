@@ -1,5 +1,5 @@
 # stellarium_starplot
-Mapping entre les références *common_names* dans Stellarium et la librairie StarPlot
+Mapping entre les références *common_names* dans Stellarium et la librairie [Starplot](https://starplot.dev)
 
 ### Context
 
@@ -37,17 +37,16 @@ L'exemple de la culture Anutan illustre parfaitement mon problème.
 
 ### Solution : 
 
-J'ai scannée (14/05/2026), le répertoire Skycultures de Stellarium, j'ai parsé les common_names en réjectant les HIP, il reste donc les **Clefs exotiques**.
+J'ai scannée (14/05/2026), le répertoire [stellarium-skycultures](https://github.com/Stellarium/stellarium-skycultures), j'ai compilé les **common_names** en réjectant les HIP, il reste donc les **Clefs exotiques**.
 
-My need is for a plotting
-https://starplot.dev
+J'ai créé un fichier de Mapping en m'appuyant sur les trois sources citées en références.
 
 ```json
 {
   "comment_1" : " Specifique à StarPlot , bypass milkyay,  starplot.Sun, starplot.Moon ", 
   "NAME Milky Way": "spe_milkyay",
-  "NAME Sun":  "spe_Sun",
-  "NAME Moon":  "spe_Moon",
+  "NAME Sun":  "spe_sun",
+  "NAME Moon":  "spe_moon",
   
   "comment_2" : "  straplot.Planet.get(name='Mercury')",    
   "NAME Mercury":  "planet_Mercury",
@@ -86,9 +85,10 @@ https://starplot.dev
 }
 ```
 
-# Sources 
+# Références 
+
 **Caldwell -> NGC**
-[http://www.messier.seds.org/xtra/similar/caldwell.html]http://www.messier.seds.org/xtra/similar/caldwell.html
+[http://www.messier.seds.org/xtra/similar/caldwell.html](http://www.messier.seds.org/xtra/similar/caldwell.html)
   
 **Messier  -> NGC**
 [https://www.rasc.ca/sites/default/files/messier.pdf](https://www.rasc.ca/sites/default/files/messier.pdf)
