@@ -45,18 +45,20 @@ https://starplot.dev
 
 ```json
 {
-  #  Spécifique à mon codage
+  "comment_1" : " Specifique à StarPlot , bypass milkyay,  starplot.Sun, starplot.Moon ", 
   "NAME Milky Way": "spe_milkyay",
   "NAME Sun":  "spe_Sun",
   "NAME Moon":  "spe_Moon",
- #  Starplot planet.get() 
+  
+  "comment_2" : "  straplot.Planet.get(name=)",    
   "NAME Mercury":  "planet_Mercury",
   "NAME Venus":  "planet_Venus",
   "NAME Mars":  "planet_Mars",
   "NAME Jupiter":  "planet_Jupiter",
   "NAME Saturn":  "planet_Saturn",
 
-  #  Starplot DSO.get()
+  
+  "comment_3" : " Star Plot starplot.DSO.get(name=) source http://www.messier.seds.org/xtra/similar/caldwell.html https://www.rasc.ca/sites/default/files/messier.pdf https://starplot.dev/object-names/dsos",
   "C 99": "dso_C099",
   "C 76":  "dso_NGC6231",
   "C 41": "dso_C041",
@@ -76,7 +78,7 @@ https://starplot.dev
   "NAME Andromeda Galaxy": "dso_NGC0224",
   "NAME Beehive Cluster": "dso_NGC2632",
 
-  # StarPlot  Star.get()
+  "comment_4":" starplot.Star.get(hip=)",
   "NAME Antares": "star_80763",
   "NAME Procyon":  "star_37279",
   "NAME Sirius":  "star_32349",
@@ -84,9 +86,13 @@ https://starplot.dev
     
 }
 ```
-   #  Caldwell -> Open NGC
-  # http://www.messier.seds.org/xtra/similar/caldwell.html
+
+# Sources 
+Caldwell -> Open NGC
+http://www.messier.seds.org/xtra/similar/caldwell.html
   
-    # Messier  -> Open NGC
-  # https://www.rasc.ca/sites/default/files/messier.pdf
-I would appreciate some feedback and comments _avant de plonger dans un terrier de lapin..._
+Messier  -> Open NGC
+https://www.rasc.ca/sites/default/files/messier.pdf
+
+StarPlot
+https://starplot.dev/object-names/dsos
