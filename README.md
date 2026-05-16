@@ -9,10 +9,11 @@ I'm working on GrapheStellar, a personal project showcasing American skycultures
 
 ### Besoin
 
-Pouvoir ajouter les objest nommées sur les cartes avec Starplot : DSO,Planet, Moon, Sun  
+Pouvoir ajouter les objets nommés sur les cartes avec [Starplot](https://starplot.dev) : DSO,Planet, Moon, Sun  
 
 ### Problème 
 Dans le format de définition Json d'une SkyCulture l'attribut **common_names**.
+
 L'exemple de la culture Anutan illustre parfaitement mon problème.
 - un mixe entre HIP and NAME pour désigner des étoiles
 - NAME inconsistant pour la recherche DSO.get(name=) de StarPlot (Open NGC)
