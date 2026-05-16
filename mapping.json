@@ -1,0 +1,46 @@
+{
+  
+  "version" : "0.1",
+  "date":"2026-05-15",
+  
+  "comment_1" : " Specifique à StarPlot , bypass milkyay,  starplot.Sun, starplot.Moon ", 
+  "NAME Milky Way": "spe_milkyay",
+  "NAME Sun":  "spe_Sun",
+  "NAME Moon":  "spe_Moon",
+  
+  "comment_2" : "  straplot.Planet.get(name=)",    
+  "NAME Mercury":  "planet_Mercury",
+  "NAME Venus":  "planet_Venus",
+  "NAME Mars":  "planet_Mars",
+  "NAME Jupiter":  "planet_Jupiter",
+  "NAME Saturn":  "planet_Saturn",
+
+  
+  "comment_3" : " Star Plot starplot.DSO.get(name=) source http://www.messier.seds.org/xtra/similar/caldwell.html https://www.rasc.ca/sites/default/files/messier.pdf https://starplot.dev/object-names/dsos",
+  "C 99": "dso_C099",
+  "C 76":  "dso_NGC6231",
+  "C 41": "dso_C041",
+  "M 44": "dso_NGC2632",
+  "M 45": "dso_Orion",
+  "M 7":  "dso_NGC6475",
+  "NGC 292": "dso_NGC292",
+  "NGC 869":  "dso_IC0869",
+  "NGC 884": "dso_NGC884",
+  "NAME Orion Nebula":"dso_Orion",
+  "NAME Carina Nebula": "dso_NGC3372",
+  "NAME ω Cen Cluster": "dso_NGC5139",
+  "NAME Large Magellanic Cloud":"dso_ESO056-115",
+  "NAME Pleiades": "dso_Mel022",
+  "NAME Small Magellanic Cloud": "dso_NGC0292",
+  "NAME Coalsack Nebula":  "dso_C099",
+  "NAME Andromeda Galaxy": "dso_NGC0224",
+  "NAME Beehive Cluster": "dso_NGC2632",
+
+  "comment_4":" starplot.Star.get(hip=)",
+  "NAME Antares": "star_80763",
+  "NAME Procyon":  "star_37279",
+  "NAME Sirius":  "star_32349",
+  "NAME Canopus": "star_30438"
+
+}
+
