@@ -20,7 +20,7 @@ Catalogue Stellarium
 ### Data
 - Source :  **[stellarium-skycultures](https://github.com/Stellarium/stellarium-skycultures)**
 - Skycultures : **39**
-- liste : anutan,arabic_al-sufi,arabic_ancient,arabic_arabian_peninsula,arabic_lunar_stations,aztec,belarusian,blackfoot,boorong,bugis,chinese,chinese_contemporary,egyptian,hawaiian_starlines,indian,inuit,japanese_moon_stations,kamilaroi,korean,lokono,macedonian,mandar,maori,mongolian,navajo,norse,northern_andes,romanian,ruelle,sami,sardinian,siberian,tongan,tukano,tupi,western,western_hlad,western_rey,western_SnT
+- liste : anutan,arabic_alsufi,arabic_ancient,arabic_arabian_peninsula,arabic_lunar_stations,aztec,belarusian,blackfoot,boorong,bugis,chinese,chinese_contemporary,egyptian,hawaiian_starlines,indian,inuit,japanese_moon_stations,kamilaroi,korean,lokono,macedonian,mandar,maori,mongolian,navajo,norse,northern_andes,romanian,ruelle,sami,sardinian,siberian,tongan,tukano,tupi,western,western_hlad,western_rey,western_SnT
 
 ### Process
 - Date du scan : **17/05/2026**
