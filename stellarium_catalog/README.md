@@ -24,7 +24,7 @@ Catalogue Stellarium
 
 ### Process
 - Date du scan : **17/05/2026**
-- Catalogue Star : **3722**  manquante **hip115125 (94 Aquarii)**
+- Catalogue Star : **3721**   
 - Catalogue DSO :  **18**
 
 ### Usage
@@ -37,14 +37,16 @@ Avec la librairie StarPlot
     hip = 32349 # Sirius ok
     print(f"Test hip{hip} => ", Star.get(hip=hip, catalog = stellarium_star) )
 
-    hip = 115125  #94 Aquarii -> manquante
+    hip = 115125  #94 Aquarii -> corrigé avec le hack duhygdata_v42-gini.parquet
     print(f"Test hip{hip} => ", Star.get(hip=hip, catalog = stellarium_star) )
 
     name="NGC0884" # chi Persei Cluster
     print(f"Test DSO {name} =>", DSO.get(name=name,catalog=stellarium_dso))
 ```
 ### Todo
-
- - Régler le pb **hip115125 (94 Aquarii)** impact pour chinese,chinese_contemporary,korean
- 
+Régler le pb **hip115125 (94 Aquarii)** 
+dans  hygdata_v42-gini.csv 
+ligne id 64490 hip 115126 dupliquée en ligne id 11931 hip115125
+et générer un catalogue hygdata_v42-gini.parquet
+_c'est surêment la méthode la plus salle du monde mais bon_ 
 
