@@ -1,7 +1,7 @@
 {
   
   "version" : "0.1",
-  "date":"2026-05-15",
+  "date":"2026-05-18",
   
   "comment_1" : " Specifique à StarPlot , bypass milkyway,  starplot.Sun, starplot.Moon ", 
   "NAME Milky Way": "spe_milkyway",
@@ -40,7 +40,9 @@
   "NAME Antares": "star_80763",
   "NAME Procyon":  "star_37279",
   "NAME Sirius":  "star_32349",
-  "NAME Canopus": "star_30438"
+  "NAME Canopus": "star_30438",
 
+  "comment_5":" regle le pb 94 Aqr dans hyddata 115125->115126",
+  "HIP 115125": "star_115126"
 }
 
