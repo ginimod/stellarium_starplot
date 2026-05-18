@@ -14,7 +14,7 @@ I'm working on GrapheStellar, a personal project showcasing American skycultures
 
 ### Process
 - Date du scan : **17/05/2026**
-- Catalogue Star : **3721**  manquante **hip115125 (94 Aquarii)**
+- Catalogue Star : **3722**  manquante **hip115125 (94 Aquarii)**
 - Catalogue DSO :  **18**
 
 ### Usage
@@ -35,6 +35,6 @@ Avec la librairie StarPlot
 ```
 ### Todo
 
- - Régler le pb **hip115125 (94 Aquarii)**
+ - Régler le pb **hip115125 (94 Aquarii)** impact pour chinese,chinese_contemporary,korean
  
 
